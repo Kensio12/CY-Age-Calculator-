@@ -1,0 +1,15 @@
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-image: url(''); /* Replace URL with provided image URL */
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black; /* Set text color to white for better visibility */
+}
+
+.container p {
+  font-style: ; /* Set text style to italic */
+  font-weight: bold; /* Set text weight to bold */
+}

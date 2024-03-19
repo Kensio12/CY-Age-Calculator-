@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Digbijoy Barman</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CY Age Calculator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1, h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+  }
+  p {
+    text-align: center;
+    color: red;
+  }
+  .calculator {
+    margin-bottom: 20px;
+  }
+  .calculator input[type="date"],
+  .calculator input[type="text"],
+  .calculator button {
+    width: calc(50% - 5px);
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+  .calculator input[type="date"],
+  .calculator input[type="text"] {
+    margin-right: 5px;
+  }
+  .calculator button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .calculator button:hover {
+    background-color: #45a049;
+  }
+  .result {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>CY Age Calculator</h1>
+  <p>Welcome to the CY Age Calculator! This simple tool helps you calculate your age in Years, Months, Weeks, Days, Hours, Minutes, and Seconds withon seconds,So hurry up.</p>
+  <h2>Get Started</h2>
+  <div class="calculator">
+    <input type="date" id="birthdate">
+    <button onclick="calculateAge()">Calculate</button>
+  </div>
+  <div class="calculator">
+    <label for="currentDate">Current Date:</label>
+    <input type="text" id="currentDate" placeholder="YYYY-MM-DD">
+  </div>
+  <div class="result" id="result"></div>
+</div>
+
+<script>
+function calculateAge() {
+  var birthdate = new Date(document.getElementById("birthdate").value);
+  var now = new Date(document.getElementById("currentDate").value);
+  var difference = now - birthdate;
+
+  var years = Math.floor(difference / (1000 * 60 * 60 * 24 * 365));
+  difference -= years * (1000 * 60 * 60 * 24 * 365);
+  var months = Math.floor(difference / (1000 * 60 * 60 * 24 * 30.4375));
+  difference -= months * (1000 * 60 * 60 * 24 * 30.4375);
+  var weeks = Math.floor(difference / (1000 * 60 * 60 * 24 * 7));
+  difference -= weeks * (1000 * 60 * 60 * 24 * 7);
+  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  difference -= days * (1000 * 60 * 60 * 24);
+  var hours = Math.floor(difference / (1000 * 60 * 60));
+  difference -= hours * (1000 * 60 * 60);
+  var minutes = Math.floor(difference / (1000 * 60));
+  difference -= minutes * (1000 * 60);
+  var seconds = Math.floor(difference / 1000);
+
+  document.getElementById("result").innerHTML = "Your age is: " + years + " years, " + months + " months, " + weeks + " weeks, " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds.";
+}
+</script>
+
+</body>
+</html>
+
+
+<img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google Logo">
+
+
+<style>
+    .logo {
+        width: 100px;
+        height: 40px;
+    }
+</style>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="logo">
+
+Co Powered by IOS
+Developer
+chinmoy
+<footer>
+    <div class="footer-content">
+        
+        <nav>
+            <t Us</a>
+        </nav>
+    </div>
+</footer>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 CY Age Calculator. All rights reserved. For inquiries, please contact us at:</p>
+       
+        <p>Email: <a href="mailto:lusacbarman@gmail.com">lusacbarman@gmail.com</a></p>
+        <p>Follow us on Instagram: <a href="https://www.instagram.com/chinmoyofficial_/">@chinmoyofficial_</a></p>
+    </div>
+</footer>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CY Age Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .logo {
+            max-width: 200px; /* Adjust the size of the logo */
+            margin: 0 auto;
+            display: block;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<img src="https://i.ibb.co/Z272gKR/D3-DFD90-B-EA7-D-4273-82-AA-BEC9-AE5-EBED4.jpg" alt="CY Age Calculator Logo" class="logo">
+
+<header>
+    <h1>CY Age Calculator</h1>
+</header>
+
+<!-- Your HTML content here -->
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
